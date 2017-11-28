@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>One Page Layout</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/reset.css" rel="stylesheet" type="text/css" media="all" />
   <body>
     <header>
       <div id="top-header">
