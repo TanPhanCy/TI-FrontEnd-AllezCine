@@ -12,7 +12,7 @@
     <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
     <!-- Slide Plugin -->
     <link rel="stylesheet" href="./assets/css/jquery.slideye.min.css"/>
     <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
@@ -38,10 +38,10 @@
                 				<input type="submit" value="Go">
                 			</form>
                 		</div>
-                		<div class="col-12 col-lg-3 login pl-5">
-                			<ul>
-                				<li><i class="fa fa-phone" aria-hidden="true"></i> (000) 123 456 789</li>
-                				<li><a href="#" data-toggle="" data-target="">Login</a></li>
+                        <div class="col-12 col-lg-3 login pl-5">
+                			<ul id="taille">
+                				<li id="tel"><i class="fa fa-phone" aria-hidden="true"></i>(000) 123 456 789</li>
+                				<li id="element"><a href="#" data-toggle="" data-target="">Login</a></li>
                 			</ul>
                 		</div>
                     </div>
