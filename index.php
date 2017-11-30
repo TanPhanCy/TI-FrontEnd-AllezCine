@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="./assets/css/jquery.slideye.min.css"/>
     <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.dotdotdot.min.js"></script>
+
   </head>
 
   <body id="fr">
 	<!-- Main Start -->
 	<div class="main">
-
+<a name="haut" id="haut"></a>
     <!-- Main Header Start -->
         <header class="main-header">
 			<div class="centered">
@@ -42,14 +43,46 @@
                         <div class="col-12 col-lg-3 login pl-5">
                 			<ul id="taille">
                 				<li id="tel"><i class="fa fa-phone" aria-hidden="true"></i>(000) 123 456 789</li>
-                				<li id="element"><a href="#" data-toggle="" data-target="">Login</a></li>
-                			</ul>
-                		</div>
+                        <li id="element"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a></li>
+                    </ul>
+                    <!-- Button to open the modal login form -->
+
+
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                      class="close" title="Close Modal">&times;</span>
+
+                      <!-- Modal Content -->
+                      <form class="modal-content animate" action="/action_page.php">
+                        <div class="imgcontainer">
+                          <img src="assets/images/woman.svg" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                          <label><b>Username</b></label>
+                          <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+                          <label><b>Password</b></label>
+                          <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+                          <button type="submit">Login</button>
+                          <button type="submit">Create account</button>
+                          <input type="checkbox" checked="checked"> Remember me
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                      </form>
                     </div>
-                </div>
-            </div>
-        </header>
-	<!-- Main Header End -->
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+<!-- Main Header End -->
 
     <!-- Nav start-->
 
@@ -67,25 +100,25 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FILMS</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Adventure</a>
-                            <a class="dropdown-item" href="#">Biography</a>
-                            <a class="dropdown-item" href="#">Horror</a>
-                            <a class="dropdown-item" href="#">Comedy</a>
-                            <a class="dropdown-item" href="#">Thriller</a>
-                            <a class="dropdown-item" href="#">Romance</a></a>
+                            <a class="dropdown-item" href="#ancre_movies">Action</a>
+                            <a class="dropdown-item" href="#ancre_movies">Adventure</a>
+                            <a class="dropdown-item" href="#ancre_movies">Biography</a>
+                            <a class="dropdown-item" href="#ancre_movies">Horror</a>
+                            <a class="dropdown-item" href="#ancre_movies">Comedy</a>
+                            <a class="dropdown-item" href="#ancre_movies">Thriller</a>
+                            <a class="dropdown-item" href="#ancre_movies">Romance</a></a>
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERIES</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Adventure</a>
-                            <a class="dropdown-item" href="#">Science-Fiction</a>
-                            <a class="dropdown-item" href="#">Horror</a>
-                            <a class="dropdown-item" href="#">Comedy</a>
-                            <a class="dropdown-item" href="#">Thriller</a>
+                            <a class="dropdown-item" href="#ancre_series">Action</a>
+                            <a class="dropdown-item" href="#ancre_series">Adventure</a>
+                            <a class="dropdown-item" href="#ancre_series">Science-Fiction</a>
+                            <a class="dropdown-item" href="#ancre_series">Horror</a>
+                            <a class="dropdown-item" href="#ancre_series">Comedy</a>
+                            <a class="dropdown-item" href="#ancre_series">Thriller</a>
                         </div>
                     </li>
 
@@ -94,7 +127,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="#ancre_contact">CONTACT US</a>
                     </li>
                 </ul>
                 </div>
@@ -136,13 +169,6 @@
 </div>
 <!-- Slider end -->
 
-
-
-
-
-
-
-
 <!-- Réseaux sociaux start -->
 <div class="media">
     <nav class="networks">
@@ -155,8 +181,6 @@
   </nav>
 </div>
 <!-- Réseaux sociaux end -->
-
-
 
     <!-- Main Content Start -->
 		<section class="main-content" id="main-content">
@@ -238,9 +262,9 @@
 
 
 				<!-- FEATURED MOVIES -->
-				<div class="container-fluid">
+				<div id="ancre_movies" class="container-fluid">
 					<!-- TITLE -->
-					<h2>FEATURED MOVIES</h2>
+					<h2 class="title_ancre">MOVIES</h2>
 				</div>
 				<div class="container">
 
@@ -567,9 +591,9 @@
 				</div>
 
 				<!-- FEATURED TV SERIES -->
-				<div class="container-fluid">
+				<div id="ancre_series" class="container-fluid">
 					<!-- TITLE -->
-					<h2>FEATURED SERIES TV</h2>
+					<h2 class="title_ancre">SERIES</h2>
 				</div>
 				<div class="container">
 
@@ -894,13 +918,8 @@
 				</div>
 
 
-
-
-
 							</div>
 					</div>
-
-
 
 
                 </div>
@@ -908,13 +927,17 @@
             <!-- Content Header End -->
 
             <!-- Content Content-inner Start -->
-			<div class="centered content-inner">
-				<div class="content" id="contact">
 
+
+
+
+			<div id="ancre_contact" class="centered content-inner">
+				<div class="content" id="contact">
 
                     <section id="contact_us">
                     	<div class="container">
-
+                            <!-- TITLE -->
+                            <h2 class="title_ancre">CONTACT US</h2>
                     		<form id="contact" action="index.php">
                     			<div id="form" class="row">
                     				<div class="col-md-6">
@@ -937,7 +960,6 @@
                     		</form>
                     	</div>
                     </section>
-
 
                 </div>
             </div>
@@ -977,10 +999,6 @@
                 </div>
 
 
-                <!-- ANCRE -->
-                <!-- <div class="bounce"><a href="#home"><i class="arrow_down"></i></a></div> -->
-
-
       		</footer>
       		<!-- Content Footer End -->
 
@@ -990,6 +1008,27 @@
   </div>
 	<!-- Main End -->
 
+    <!--div de la arrow -->
+     <div class="arrow"><a id="return" class="invisible" href="#haut"><img src="assets/images/arrow_up.svg" width="50px" height="50px"</a></div>
+     <script>
+     document.addEventListener('DOMContentLoaded', function() { // s'assurer que la page est chargée
+       window.onscroll = function(ev) { //détecter quand la page défile
+         document.getElementById("return").className = (window.pageYOffset > 100) ? "visible" : "invisible";
+         //cibler la classe de l'élément "return"
+         //interchanger la classe selon la position dans la page,
+         //visible dès qu'elle est à plus de 100 pixels du haut
+         //opacity:0 étant invisible et opacity:1 visible
+       };
+     });
+     //essai non concluant
+     //let arrow=document.createElement("img");
+     //arrow.setAttribute("src","assets/images/arrow_up.png");
+     //arrow.setAttribute("width","50px");
+     //arrow.setAttribute("height","50px");
+     </script>
+
+     <!-- <script>
+     </script> -->
 
 
     <!-- Optional JavaScript -->
@@ -999,6 +1038,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
-  <script src="assets/js/age-verification.js"></script>
+  <script src="assets/js/script.js"></script>
   </body>
 </html>
