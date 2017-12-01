@@ -170,10 +170,10 @@
   <div class="media">
       <nav class="networks">
           <ul>
-              <li class="twitter"><a href="#">Twitter <i class="fa fa-twitter"></i></a></li>
-              <li class="facebook"><a href="#">Facebook <i class="fa fa-facebook"></i></a></li>
-              <li class="dribbble"><a href="#">Dribbble <i class="fa fa-dribbble"></i></a></li>
-              <li class="gplus"><a href="#">Google+ <i class="fa fa-google-plus"></i></a></li>
+              <li class="twitter"><a href="https://twitter.com/?lang=fr" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
+              <li class="facebook"><a href="https://www.facebook.com" target="_blank">Facebook <i class="fa fa-facebook"></i></a></li>
+              <li class="dribbble"><a href="https://dribbble.com" target="_blank">Dribbble <i class="fa fa-dribbble"></i></a></li>
+              <li class="gplus"><a href="https://plus.google.com/discover?hl=fr" target="_blank">Google+ <i class="fa fa-google-plus"></i></a></li>
           </ul>
     </nav>
   </div>
@@ -912,64 +912,62 @@
             <!-- Content Header End -->
 
 
-                    <!-- Content Content-inner Start -->
-                    <div id="ancre_shop" class="centered content-inner">
-                    <div class="content" id="">
-                    <section id="">
+            <!-- Content Content-inner Start -->
+            <div id="ancre_shop" class="centered content-inner">
+            <div class="content" id="">
+            <section id="">
+            <div class="container">
 
-                        <div class="container">
-                                <!-- TITLE -->
-                                <h2 class="title_ancre">SHOP MOVIES</h2>
-                                <!-- BOUTONS NOIRS -->
-                                <div class="my_black_button">
-                                    <a href="#" class="btn btn black_button btn-lg">
-                                        <i  class="fa fa-chevron-left" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#" class="btn btn black_button btn-lg">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </a>
-                                </div>
+                        <!-- TITLE -->
+                        <h2 class="title_ancre">SHOP MOVIES</h2>
+                        <!-- BOUTONS NOIRS -->
+                        <div class="my_black_button">
+                            <a id="add" href="#title_ancre" class="btn btn black_button btn-lg">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </a>
+                            <a id="close" href="#title_ancre" class="btn btn black_button btn-lg">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
 
                             <div id="shop_content">
-                              <div class="vid">
-                                <iframe width="480" height="315" src="https://www.youtube.com/embed/NAKtN6lT5O0" frameborder="0" allowfullscreen></iframe>
-                              </div>
-                              <div class="description">
-                                      <h2 class="myabstractsupertitle">
-                                      Ice Age: Continental Drift
-                                      </h2>
-
-                                      <div class="container">
-                                          <div class="row">
-                                              <div class="col-md-3">
-                                                  <p class="abstract_title">Abstract :</p>
-                                              </div>
-                                              <div class="col-md-9">
-                                                  <p class="abstract_description">In deze vierde film gaan Manny (Ray Romano), Sid (John Leguizamo) en Diego (Denis Leary) op een nieuw avontuur nadat hun continent losbreekt. Ze gebruiken een ijsberg als schip en moeten het opnemen tegen nieuwe zeemonsters en piraten terwijl ze terug proberen te komen bij hun vrienden.</p>
-                                              </div>
-                                          </div>
-                                          <br />
-                                          <div class="row">
-                                              <div class="col-md-3">
-                                                  <p class="abstract_title">Release :</p>
-                                              </div>
-                                              <div class="col-md-9">
-                                                  <p class="abstract_description">2017</p>
-                                              </div>
-                                          </div>
-                                          <br />
-                                          <div class="row">
-                                               <div class="col-md-3">
-                                                   <p class="abstract_title">Kind :</p>
-                                                </div>
-                                                <div class="col-md-9">
-                                                    <p class="abstract_description">Animation.</p>
-                                                </div>
-                                          </div>
-                                     </div>
-                                 </div>
+                                <div class="vid">
+                                    <iframe width="450" height="315" src="https://www.youtube.com/embed/NAKtN6lT5O0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="description">
+                                    <h2 class="myabstractsupertitle">Ice Age: Continental Drift</h2>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                 <p class="abstract_title">Abstract :</p>
+                                            </div>
+                                            <div class="col-md-9">
+                                                 <p class="abstract_description">In deze vierde film gaan Manny (Ray Romano), Sid (John Leguizamo) en Diego (Denis Leary) op een nieuw avontuur nadat hun continent losbreekt. Ze gebruiken een ijsberg als schip en moeten het opnemen tegen nieuwe zeemonsters en piraten terwijl ze terug proberen te komen bij hun vrienden.</p>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <p class="abstract_title">Release :</p>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <p class="abstract_description">2017</p>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                               <p class="abstract_title">Kind :</p>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <p class="abstract_description">Animation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
+                            <!--First container start-->
+                            <div class="first-container" id="contenu1" style="display:flex">
                             <!-- SHOP MOVIES -->
                             <div class="library-featured">
                                 <!-- THUMBNAIL 1 -->
@@ -1011,14 +1009,83 @@
                             </div>
 
                         </div>
-                    </section>
-                    </div>
-                    </div>
+                        <!-- First container end -->
+                        <!--Next container start-->
+                        <div class="next-container" id="contenu2" style="display:none">
+                            <!-- SHOP MOVIES -->
+                            <div class="library-featured">
+                                <!-- THUMBNAIL 1 -->
+                                <div class="library-featured-col-shop">
+                                        <div class="library-container">
+                                            <img src="assets/images/c1.jpg" alt="Movie cover">
+                                        </div>
+                                </div>
+                                <!-- THUMBNAIL 2 -->
+                                <div class="library-featured-col-shop">
+                                    <div class="library-container">
+                                        <img src="assets/images/c2.jpg" alt="Movie cover">
+                                    </div>
+                                </div>
+                                <!-- THUMBNAIL 3 -->
+                                <div class="library-featured-col-shop">
+                                    <div class="library-container">
+                                        <img src="assets/images/c3.jpg" alt="Movie cover">
+                                    </div>
+                                </div>
+                                <!-- THUMBNAIL 4 -->
+                                <div class="library-featured-col-shop">
+                                    <div class="library-container">
+                                        <img src="assets/images/c4.jpg" alt="Movie cover">
+                                    </div>
+                                </div>
+                                <!-- THUMBNAIL 5 -->
+                                <div class="library-featured-col-shop">
+                                    <div class="library-container">
+                                        <img src="assets/images/c5.jpg" alt="Movie cover">
+                                    </div>
+                                </div>
+                                <!-- THUMBNAIL 6 -->
+                                <div class="library-featured-col-shop">
+                                    <div class="library-container">
+                                        <img src="assets/images/c6.jpg" alt="Movie cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            </section>
+            </div>
+            </div>
+
+<script>//AFFICHER_MASQUER
+
+var rajouter = document.getElementById('add');
+var contenu1 = document.getElementById('contenu1');
+var contenu2 = document.getElementById('contenu2');
+var x = true;
+rajouter.addEventListener('click',changeContenu);
+
+function changeContenu() {
+if(x == true) {
+contenu1.style.display = 'none';
+contenu2.style.display = 'flex';
+x = false;
+} else {
+contenu1.style.display = 'flex';
+contenu2.style.display = 'none';
+rajouter.style.transform = 'rotate(0deg)';
+x = true;
+}
+}
+
+var rajouter = document.getElementById('close');
+var contenu1 = document.getElementById('contenu1');
+var contenu2 = document.getElementById('contenu2');
+var x = true;
+rajouter.addEventListener('click',changeContenu);</script>
 
 
-
-
-                    <!-- Content Content-inner End -->
+            <!-- Content Content-inner End -->
 
             <!-- Content Content-inner Start -->
 			<div id="ancre_contact" class="centered content-inner">
